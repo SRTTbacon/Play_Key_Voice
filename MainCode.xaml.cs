@@ -260,6 +260,7 @@ namespace Play_Key_Voice
                     stw.WriteLine(File_Now);
                 stw.Close();
                 Sub_Code.File_Encrypt(sfd.FileName + ".tmp", sfd.FileName, "Play_Voice_Preset_Data_By_SRTTbacon", true);
+                Load_File_Path = sfd.FileName;
                 Message_Feed_Out("プリセットを保存しました。");
             }
             sfd.Dispose();
